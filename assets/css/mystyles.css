@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("fontawesome-all.min.css");
+
+.responsiveCal {
+
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+
+}
+
+.responsiveCal iframe {
+
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+
+}
+
+
+.mobile_device_380px {
+    display: none;
+}
+.mobile_device_480px {
+    display: none;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px{display: block;}
+    .desktop {display: none;}
+}
+
+img.rounded-corners {
+
+  border-radius: 20px;
+
+}
+
+.travisrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.traviscolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.traviscolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .traviscolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .traviscolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
