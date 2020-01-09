@@ -1,16 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Honey Pots</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/mystyles.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -24,7 +21,7 @@
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#calendar" class="icon solid fa-calendar"><span>Calendar</span></a>
 						<a href="#contact" class="icon solid fa-address-book"><span>Contact</span></a>
-						<!--a href="https://facebook.com" class="icon brands fa-facebook"><span>Twitter</span></a-->
+						<a href="#facebook" class="icon brands fa-facebook"><span>Facebook</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -47,24 +44,24 @@
 								<section>
 									<div class="row">
   									<div class="column">
-    									<img src="images/row.jpg">
-    									<img src="images/nighttop.jpg">
-    									<img src="images/wedding.jpg">
+    									<a data-fancybox="gallery" data-caption="Row of Pots" href="images/row.jpg"><img src="images/row.jpg"></a>
+    									<a data-fancybox="gallery" data-caption="Nightime Top View" href="images/nighttop.jpg"><img src="images/nighttop.jpg"></a>
+    									<a data-fancybox="gallery" data-caption="A wedding rendition" href="images/wedding.jpg"><img src="images/wedding.jpg"></a>
 
   									</div>
   									<div class="column">
-    									<img src="images/lotsopots.jpg">
-    									<img src="images/princess.jpg">
-											<img src="images/weddingdoor.jpg">
+    									<a data-fancybox="gallery" data-caption="A Lot of our pots" href="images/lotsopots.jpg"><img src="images/lotsopots.jpg"></a>
+    									<a data-fancybox="gallery" data-caption="Fit for a queen" href="images/princess.jpg"><img src="images/princess.jpg"></a>
+											<a data-fancybox="gallery" data-caption="I now pronounce you." href="images/weddingdoor.jpg"><img src="images/weddingdoor.jpg"></a>
   									</div>
   									<div class="column">
-    									<img src="images/camo.jpg">
-    									<img src="images/weddingleft.jpg">
+    									<a data-fancybox="gallery" data-caption="Can you spot the pot?" href="images/camo.jpg"><img src="images/camo.jpg"></a>
+    									<a data-fancybox="gallery" data-caption="To the left" href="images/weddingleft.jpg"><img src="images/weddingleft.jpg"></a>
 
   									</div>
   									<div class="column">
-											<img src="images/weddingright.jpg">
-    									<img src="images/truck.jpg">
+											<a data-fancybox="gallery" data-caption="To the right" href="images/weddingright.jpg"><img src="images/weddingright.jpg"></a>
+    									<a data-fancybox="gallery" data-caption="The operation" href="images/truck.jpg"><img src="images/truck.jpg"></a>
 
 
   									</div>
@@ -105,10 +102,20 @@
 								<p>
 									By Phone : <a href = "tel:812-369-3805">812-369-3805</a>
 									<br>By Email : <a href = "mailto: honeypotsare@gmail.com">honeypotsare@gmail.com</a>
-									<!--<br>By Facebook : <a href="https://www.facebook.com/tony.eads.9883">Honey Pots</a>-->
+									<br>By Facebook : <a href="#facebook">Honey Pots</a>
 								</p>
 							</article>
 
+							<!--Facebook -->
+							<article id="facebook" class="panel">
+								<header>
+									<h2>Hey Dad and Mom!</h2>
+								<header>
+								<p>
+									When you get a Facebook page made, clicking this will take you right to it.
+									<br>Let me know when you do!  -Z
+								</p>
+							</article>
 
 					</div>
 
@@ -122,6 +129,8 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
