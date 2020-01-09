@@ -6,22 +6,14 @@
 -->
 <html>
 	<head>
-		<title>Honey Pots</title>
+		<title>Astral by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/mystyles.css" />
-		<link rel="stylesheet" href="assets/css/lightbox.css" />
-		<link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
-		<!--script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script-->
-		<script type="text/javascript" src="assets/js/lightbox-plus-jquery.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -30,81 +22,70 @@
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<!--<a href="#calendar" class="icon solid fa-calendar"><span>Calendar</span></a>-->
+						<a href="#calendar" class="icon solid fa-calendar"><span>Calendar</span></a>
 						<a href="#contact" class="icon solid fa-address-book"><span>Contact</span></a>
-						<!--<a href="https://www.facebook.com/tony.eads.9883" class="icon brands fa-facebook"><span>Facebook</span></a>-->
+						<!--a href="https://facebook.com" class="icon brands fa-facebook"><span>Twitter</span></a-->
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Me -->
-						<article id="home" class="panel intro">
-							<header>
-								<!--h1>Jane Doe</h1-->
-								<!--p>Senior Astral Projectionist</p-->
-								<img src="images/logo-thumb.jpg" alt="" />
-							</header>
-							<a href="#work" class="jumplink pic">
-								<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-								<img src="images/row.jpg" alt="" />
-							</a>
-						</article>
+							<article id="home" class="panel intro">
+								<header>
+									<img src="images/thumbnails/logo-thumb.jpg" alt="" />
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/row.jpg" alt="" />
+								</a>
+							</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 
-								<div class="grid">
-									<div class="grid-sizer"></div>
-									<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-								  </div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-  								</div>
-  								<div class="grid-item">
-    								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-  								</div>
-								</div>
+								<section>
+									<div class="row">
+  									<div class="column">
+    									<img src="images/row.jpg">
+    									<img src="images/nighttop.jpg">
+    									<img src="images/wedding.jpg">
 
+  									</div>
+  									<div class="column">
+    									<img src="images/lotsopots.jpg">
+    									<img src="images/princess.jpg">
+											<img src="images/weddingdoor.jpg">
+  									</div>
+  									<div class="column">
+    									<img src="images/camo.jpg">
+    									<img src="images/weddingleft.jpg">
+
+  									</div>
+  									<div class="column">
+											<img src="images/weddingright.jpg">
+    									<img src="images/truck.jpg">
+
+
+  									</div>
+									</div>
+								</section>
 							</article>
 
 							<!-- Calendar -->
 								<article id="calendar" class="panel">
+									<button id="agendabutton" onclick="showhide()">Toggle Agenda View</button>
+									<button id="monthbutton" class="hidden" onclick="showhide()">Toggle Month View</button>
 
-								<div class="responsiveCal">
-									<div class="desktop">
-										<!--Default display for desktop mode-->
+								<div class="responsiveCal" id="monthview">
+
 										<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=bWxuY2hhc2c4cGFpY3BwZmIxczYxNDFucWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23402175&amp;mode=MONTH&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-									</div>
-
-
-
-									<div class="mobile_device_480px">
-										<!-- For mobile max width 480px -->
-
+								</div>
+								<div class="responsiveCal hidden" id="agendaview">
+										<button onclick="showhide()">Toggle Month View</button>
 										<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=bWxuY2hhc2c4cGFpY3BwZmIxczYxNDFucWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23402175&amp;mode=AGENDA&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="800" height="2000
 										" frameborder="0" scrolling="no"></iframe>
-									</div>
+
 								</div>
 
 
@@ -128,24 +109,25 @@
 								</p>
 							</article>
 
+
 					</div>
 
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>Z</li><li>Design : <a href="Oldmanz.com">OldManZ</a></li>
+							<li>&copy; Z.</li><li>Design: <a href="http://oldmanz.com">OldManZ</a></li>
 						</ul>
 					</div>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="/assets/js/masonry.pkgd.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/myscripts.js"></script>
 
 	</body>
 </html>

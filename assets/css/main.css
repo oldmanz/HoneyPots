@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
-
 /*
 	Astral by HTML5 UP
 	html5up.net | @ajlkn
@@ -75,7 +74,7 @@ input, select, textarea {
 
 /* Row */
 
-/*	.row {
+	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -1440,7 +1439,7 @@ input, select, textarea {
 
 /* Table */
 
-/*	table {
+	table {
 		width: 100%;
 	}
 
@@ -1547,7 +1546,7 @@ input, select, textarea {
 
 /* Image */
 
-/*	.image {
+	.image {
 		display: inline-block;
 	}
 
